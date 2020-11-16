@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThongKeActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/thongke"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        >
+        <TextView
+            android:id="@+id/tvThongKeNgay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hôm nay:"
+            android:textSize="25dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:src="@drawable/tien"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        >
+        <TextView
+            android:id="@+id/tvThongKeThang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tháng này:"
+            android:textSize="25dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:src="@drawable/tien"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        >
+        <TextView
+            android:id="@+id/tvThongKeNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Năm này:"
+            android:textSize="25dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:src="@drawable/tien"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

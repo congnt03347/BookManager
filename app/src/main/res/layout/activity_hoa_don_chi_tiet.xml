@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HoaDonChiTietActivity">
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã hóa đơn"
+        android:id="@+id/edMaHoaDon"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã sách"
+        android:id="@+id/edMaSach"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số lượng"
+        android:inputType="number"
+        android:id="@+id/edSoLuongMua"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thêm"
+            android:onClick="ADDHoaDonChiTiet"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thanh toán"
+            android:onClick="thanhToanHoaDon"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvThanhTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thành tiền:"
+        android:textSize="16dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        />
+
+    <ListView
+        android:id="@+id/lvCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        />
+
+</LinearLayout>
